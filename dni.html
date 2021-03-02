@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="dni.css">
+</head>
+
+<body>
+    <h1>Calcular letra del Dni</h1>
+    <form id="myForm">
+        <label for="number">Número del Dni:</label>
+        <input type="text" name="number" id="number" maxlength="8" pattern="[0-9]{8}" /> <br />
+        <label for="letter">Letra del Dni:</label>
+        <input type="text" name="letter" id="letter" maxlength="1" pattern="[A-Za-z]{1}" /> <br />
+
+        <input type="button" value=" Calcular" onclick="main() " />
+
+        <h1 class="invisible " id="h1">
+        </h1>
+        <h3 class="invisible " id="h3">
+        </h3>
+    </form>
+    <script src="dni.js "></script>
+</body>
+
+</html>
